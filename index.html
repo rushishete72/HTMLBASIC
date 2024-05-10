@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-16">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome</title>
+        <style>
+            #wer {
+
+                max-width: fit-content;
+                border: 1px solid #000000;
+                text-align: center;
+                margin: 15% auto;
+                cursor: pointer;
+                /* Added cursor pointer */
+            }
+        </style>
+    </head>
+
+    <body style="background-color: #a33317;">
+        <div style="background-color:  #8a917e;" onclick="changeColor('wer')" id="wer">
+            <h1>Welcome to Our HTML Web!!</h1>
+            <h4>We are thrilled to have you here!</h4>
+
+            <p>%%%%%%%%%%%%%%%%%%%%%%%%%%%</p>
+            <a href="./home.html" target="_self" rel="noopener noreferrer">Go to the home page</a>
+            <p>%%%%%%%%%%%%%%%%%%%%%%%%%%</p>
+        </div>
+
+        <script>
+            // Function to change background color of target div
+            function changeColor(wer) {
+                var targetColor = "#ab7317";
+                document.getElementById(wer).style.backgroundColor = targetColor;
+            }
+        </script>
+    </body>
+
+</html>
